@@ -1,0 +1,36 @@
+<!-- Define o tipo de documento como HTML5 -->
+<!DOCTYPE html> 
+<!-- Define o idioma da página como português do Brasil -->
+<html lang="pt-BR"> 
+<head>
+  <!-- Define a codificação de caracteres para UTF-8 -->
+  <meta charset="UTF-8"> 
+  <!-- Torna a página responsiva para diferentes tamanhos de tela -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- Define o título que aparece na aba do navegador -->
+  <title>Lista de Tarefas</title> 
+  <!-- Vincula o arquivo de estilo CSS -->
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <!-- Contêiner para o conteúdo da página -->
+  <div class="container"> 
+    <!-- Título principal da página -->
+    <h1>Lista de Tarefas</h1> 
+    <!-- Texto que instrui o usuário a adicionar tarefas -->
+    <p>Adicione suas tarefas!</p> 
+    <!-- Campo de entrada para digitar a tarefa -->
+    <input type="text" id="inputTarefa" placeholder="Digite a sua tarefa"> 
+    <!-- Botão para adicionar a tarefa -->
+    <button onclick="adicionarTarefa()">Adicionar Tarefa</button> 
+    <button onclick="LimparLista()" class="botao_lista">Apagar tudo</button>
+    <!-- Onde a mensagem de sucesso é exibida -->
+    <p id="mensagem"></p> 
+    <!-- Lista onde as tarefas serão mostradas -->
+    <ul id="listaTarefas"></ul> 
+  </div>
+
+  <!-- Vincula o arquivo de script JavaScript -->
+  <script src="script.js"></script> 
+</body>
+</html>
