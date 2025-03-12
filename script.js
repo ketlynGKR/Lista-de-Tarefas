@@ -91,7 +91,7 @@ function editarTarefa(i) {
 function LimparLista() {
     if (tarefas == "") {
         //mostre uma mensagem de erro
-        let apagarErro = " Nenhuma Lista para apagar!"
+        let apagarErro = " Nenhuma tarefa para apagar!"
          // Exibe a mensagem de erro 
         mensagem.textContent = apagarErro; 
     } else {
